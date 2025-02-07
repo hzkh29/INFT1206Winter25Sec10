@@ -8,16 +8,21 @@
   </head>
 <body>
     <h1>Assignment #2 - Tables</h1>
-
+<!-- 
+    Implement a <table> element that included <thead> and <tbody> elements -->
     <table>
+      <!-- Includ a <caption> element immediately below the <table> tag -->
         <caption>Data about the planets of our solar system (Planetary facts taken from <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).</caption>
+        <!-- Implement black border around the planet names column using a <colgroup> and a in-line style attribute -->
         <colgroup>
             <col span="2">
             <col style="border: 2px solid black">
             <col span="9">
           </colgroup>
           <thead>
+            <!-- Include a <tr> element with <th> elements (that include the correct titles from the raw data) inside of the <thead> element -->
             <tr>
+              <!-- Include the the scope="coL" attribute on each <th> element in the table header row -->
               <td colspan="2"></td>
               <th scope="col">Name</th>
               <th scope="col">Mass (10<sup>24</sup>kg)</th>
@@ -31,6 +36,7 @@
               <th scope="col">Notes</th>
             </tr>
           </thead>
+          <!-- Include nine (9) additional <tr> rows, each with a <th> for the planet's name and <td> elements for each data point from the raw data -->
           <tbody>
             <tr>
               <th rowspan="4" colspan="2" scope="rowgroup">Terrestrial planets</th>
@@ -82,6 +88,8 @@
               <td>The red planet</td>
             </tr>
             <tr>
+              <!-- Implement the special row with Jovian planets, ice giants and dwarf plants correclty using colspan and rowspan attributes correctly -->
+               <!-- Include the the scope="rowgroup" attribute on each <th> elements containing "Terrestrial planets", "Jovian planets", "Gas giants", and "Ice giants"  -->
               <th rowspan="4" scope="rowgroup">Jovian planets</th>
               <th rowspan="2" scope="rowgroup">Gas giants</th>
               <th scope="row">Jupiter</th>
@@ -133,6 +141,7 @@
               <td></td>
             </tr>
             <tr>
+              <!-- Include the the scope="row" attribute on each <th> elements containing planet names, and the one containing "Dwarf planets"  -->
               <th colspan="2" scope="row">Dwarf planets</th>
               <th scope="row">Pluto</th>
               <td>0.0146</td>
