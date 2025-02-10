@@ -8,7 +8,6 @@
     margin: 0 auto;
     min-width: 1000px;
     max-width: 1400px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
   /* Layout */
@@ -41,7 +40,38 @@
   header, footer {
     border-top: 5px solid #a66;
     border-bottom: 5px solid #a66;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
   }
   
   /* WRITE YOUR CODE BELOW HERE */
+
+
+header {
+  /* a sans-serif or slab serif for the headings might be nice */
+  font-family: 'Comprehension', sans-serif;
+  /* Give your headings and other element types appropriate font-sizes defined using a suitable relative unit. */
+  font-size: 15px;
+  /* Center your top level heading on the page. */
+  text-align: center;
+  /* Give your headings a little bit of letter-spacing to make them not too squashed, and allow the letters to breathe a bit. */
+  letter-spacing: 2px;
+
+}
+
+body{
+  /* Apply your body font to the whole page, and your heading font to your headings */
+  font-family: 'Aleo', sans-serif;
+  /*  a serif site-wide font for the general body text */
+  /* Give the page a site-wide font-size of 10px. */
+  font-size: 10px;
+  /* Give your body text a suitable line-height. */
+  line-height: 15px;
+  /* Give your body text some letter-spacing and word-spacing, as appropriate. */
+  letter-spacing: .5px;
+  word-spacing: 1px;
+}
+  /* Give the first paragraph after each heading in the <section> a little bit of text-indentation, say 20px. */
+section{
+  p{
+    text-indent: 40px;
+  }
+}
