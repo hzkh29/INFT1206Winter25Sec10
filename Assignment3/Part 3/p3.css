@@ -68,10 +68,12 @@ body{
   /* Give your body text some letter-spacing and word-spacing, as appropriate. */
   letter-spacing: .5px;
   word-spacing: 1px;
+  
 }
+
   /* Give the first paragraph after each heading in the <section> a little bit of text-indentation, say 20px. */
 section{
-  p{
+  h2+p{
     text-indent: 40px;
   }
 }
