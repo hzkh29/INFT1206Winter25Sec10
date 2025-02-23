@@ -24,6 +24,7 @@ body {
   }
   
   nav {
+    position: sticky;
     background-color: #000;
     padding: .5em;
   }
@@ -50,19 +51,47 @@ body {
       width: 200px;
   }
 
-  /* Header  */
+ /* To display the navigation items in a row, with an equal amount of space between the items. */
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+nav ul li{
+  flex: 1;
+}
 
-  nav ul{
-    display: flex;
-    flex-direction: row;
-  }
-  nav ul li{
-    flex: 1;
-  }
+/* The navigation bar should scroll with the content and then become stuck at the top of the viewport when it reaches it. */
+nav{
+  position: sticky;
+  z-index: 10;
+  top: 0;
+}
 
-  /* Adjust image */
-  article img{
-    float: left;
-  }
+/* The image that is inside the article should have text wrapped around it. */
+article img{
+  float: left;
+  margin: 0 15px 15px 0;
+}
 
-  /* Use grid for the images - 3 rows 2 columns */
+/* Use grid for the images - 3 rows 2 columns */
+.photos{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 2;
+  gap: 1px;
+}
+
+/* Create a two-column grid layout for the main content */
+main.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px; 
+}
+
+
+
+
+
+  
+  
